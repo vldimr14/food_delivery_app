@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/screens/catalog_screen.dart';
 import 'package:food_delivery_app/screens/home_screen.dart';
 
 class AppNavigationBar extends StatefulWidget {
@@ -13,7 +14,7 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
 
   static final List<Widget> _widgets = <Widget>[
     const HomeScreen(),
-    const Text('Catalog'),
+    const CatalogScreen(),
     const HomeScreen(),
     const Text('Cart')
   ];
@@ -38,7 +39,7 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
               backgroundColor: Theme.of(context).primaryColor),
           BottomNavigationBarItem(
               icon: const Icon(Icons.list_alt_outlined),
-              label: 'Categories',
+              label: 'Catalog',
               backgroundColor: Theme.of(context).primaryColor),
           BottomNavigationBarItem(
               icon: const Icon(Icons.search_outlined),
