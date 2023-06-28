@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app/models/product.dart';
 import 'package:food_delivery_app/widgets/product_view.dart';
 
-class CatalogScreen extends StatefulWidget {
+class CatalogScreen extends StatelessWidget {
   const CatalogScreen({super.key});
 
-  @override
-  State<CatalogScreen> createState() => _CatalogScreenState();
-}
-
-class _CatalogScreenState extends State<CatalogScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,7 +14,7 @@ class _CatalogScreenState extends State<CatalogScreen> {
         child: ListView(
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
-          padding: const EdgeInsets.only(left: 10, top: 60),
+          padding: const EdgeInsets.only(left: 10, top: 60, right: 10),
           children: [
             Text(
               'Our dishes',
@@ -28,12 +24,37 @@ class _CatalogScreenState extends State<CatalogScreen> {
                   ?.copyWith(color: Colors.black),
             ),
             ProductView(
-                imagePath: 'assets/images/steak.jpeg', text: 'New York steak'),
-            ProductView(imagePath: 'assets/images/fries.jpeg', text: 'Fries'),
+              product: Product(
+                  id: '1',
+                  name: 'New York steak',
+                  description: 'Description',
+                  image: 'assets/images/steak.jpeg',
+                  price: 120.0),
+            ),
             ProductView(
-                imagePath: 'assets/images/burger.jpeg', text: 'Classic burger'),
+              product: Product(
+                  id: '1',
+                  name: 'New York steak',
+                  description: 'Description',
+                  image: 'assets/images/steak.jpeg',
+                  price: 120.0),
+            ),
             ProductView(
-                imagePath: 'assets/images/dessert.jpeg', text: 'Dessert'),
+              product: Product(
+                  id: '1',
+                  name: 'New York steak',
+                  description: 'Description',
+                  image: 'assets/images/steak.jpeg',
+                  price: 120.0),
+            ),
+            ProductView(
+              product: Product(
+                  id: '1',
+                  name: 'New York steak',
+                  description: 'Description',
+                  image: 'assets/images/steak.jpeg',
+                  price: 120.0),
+            ),
           ],
         ),
       ),
