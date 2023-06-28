@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
+import 'widgets/app_navigation_bar.dart';
 
 void main() {
   runApp(const FoodDeliveryApp());
@@ -12,7 +13,7 @@ class FoodDeliveryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: const AppNavigationBar(),
       theme: ThemeData(
         primaryColor: Colors.grey.shade200,
         textTheme: const TextTheme(
