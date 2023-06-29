@@ -3,7 +3,7 @@ class Product {
   final String name;
   final String description;
   final String image;
-  final double price;
+  final int price;
 
   Product(
       {required this.id,
