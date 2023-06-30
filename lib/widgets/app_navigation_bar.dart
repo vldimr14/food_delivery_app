@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/screens/catalog_screen.dart';
 import 'package:food_delivery_app/screens/home_screen.dart';
+// import 'package:food_delivery_app/screens/search_screen.dart';
+import 'package:food_delivery_app/screens/cart_screen.dart';
 
 class AppNavigationBar extends StatefulWidget {
   const AppNavigationBar({super.key});
@@ -15,8 +17,8 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
   static final List<Widget> _widgets = <Widget>[
     const HomeScreen(),
     const CatalogScreen(),
-    const HomeScreen(),
-    const Text('Cart')
+    // const SearchScreen(),
+    const CartScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -41,10 +43,10 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
               icon: const Icon(Icons.list_alt_outlined),
               label: 'Catalog',
               backgroundColor: Theme.of(context).primaryColor),
-          BottomNavigationBarItem(
-              icon: const Icon(Icons.search_outlined),
-              label: 'Search',
-              backgroundColor: Theme.of(context).primaryColor),
+          // BottomNavigationBarItem(
+          //     icon: const Icon(Icons.search_outlined),
+          //     label: 'Search',
+          //     backgroundColor: Theme.of(context).primaryColor),
           BottomNavigationBarItem(
               icon: const Icon(Icons.shopping_cart_outlined),
               label: 'Cart',

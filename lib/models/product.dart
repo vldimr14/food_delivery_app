@@ -11,4 +11,6 @@ class Product {
       required this.description,
       required this.image,
       required this.price});
+
+  int get getPrice => price;
 }

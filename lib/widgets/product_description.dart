@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/product.dart';
 import 'package:gap/gap.dart';
+import 'package:food_delivery_app/models/cart.dart';
 
 class ProductDescription extends StatelessWidget {
   final Product product;
@@ -9,7 +10,7 @@ class ProductDescription extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: Column(
@@ -55,7 +56,9 @@ class ProductDescription extends StatelessWidget {
                         const Gap(10),
                         SizedBox(
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Cart.addToCart(product);
+                            },
                             style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.yellow.shade700,
                                 foregroundColor: Colors.white,
