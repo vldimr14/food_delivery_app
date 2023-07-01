@@ -10,8 +10,8 @@ More soon.
 
 ## Screenshosts
 
-![Screenshots]("screenshots/Screenshot_1");
-![Screenshots]("screenshots/Screenshot_2");
-![Screenshots]("screenshots/Screenshot_3");
-![Screenshots]("screenshots/Screenshot_4");
-![Screenshots]("screenshots/Screenshot_5");
+![Screenshots]("screenshots/Screenshot_1.png");
+![Screenshots]("screenshots/Screenshot_2.png");
+![Screenshots]("screenshots/Screenshot_3.png");
+![Screenshots]("screenshots/Screenshot_4.png");
+![Screenshots]("screenshots/Screenshot_5.png");
